@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #F8F9FA 0%, #E8F5E8 50%, #D4EDDA 100%);
+  font-family: "Inter", "Poppins", "Roboto", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #2D5016;
+}
+
+.agriculture-home {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.agri-hero {
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  max-height: 70vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-shadow: 0 4px 40px rgba(46, 125, 50, 0.15);
+  border-radius: 0;
+}
+
+.agri-hero-slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.agri-hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.agri-hero-slide.active {
+  opacity: 1;
+}
+
+.agri-hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.85) contrast(1.1);
+  transition: filter 0.8s ease;
+}
+
+.agri-hero-slide.active img {
+  filter: brightness(0.9) contrast(1.15);
+}
+
+.agri-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.agri-hero-slide.active .agri-lines {
+  opacity: 1;
+}
+
+.draw-line {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.95);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.9));
+  animation: draw 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards 0.8s;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.agri-hero-slide:not(.active) .draw-line {
+  stroke-dashoffset: 400;
+  animation: none;
+}
+
+.agri-hero-indicators {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.agri-hero-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.agri-hero-dot.active,
+.agri-hero-dot:hover {
+  background: linear-gradient(135deg, #2E7D32, #4CAF50);
+  transform: scale(1.3);
+  box-shadow: 0 4px 16px rgba(46, 125, 50, 0.4);
+}
+
+.agri-hero:hover .agri-hero-slides {
+  animation-play-state: paused;
+}
+
+@media (max-width: 1024px) {
+  .agri-hero {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .agri-hero {
+    height: 55vh;
+  }
+  
+  .agri-hero-indicators {
+    bottom: 2rem;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+  
+  .agri-hero-dot {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .agri-hero {
+    height: 50vh;
+  }
+  
+  .agri-hero-indicators {
+    bottom: 1.5rem;
+    padding: 8px 16px;
+  }
+  
+  .draw-line {
+    stroke-width: 2;
+  }
+}
+
+@supports (backdrop-filter: blur(20px)) {
+  .agri-hero-indicators {
+    backdrop-filter: blur(25px);
+  }
+}
+
+@media (hover: hover) {
+  .agri-hero:hover {
+    overflow: hidden;
+  }
+}

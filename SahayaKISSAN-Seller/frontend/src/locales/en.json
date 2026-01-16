@@ -1,0 +1,129 @@
+{
+  "sellerNav": {
+    "mySells": "My Current Sells",
+    "addNew": "Add New Selling"
+  },
+  "common": {
+    "select": "Select",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "tryAgain": "Try Again"
+  },
+
+  "categories": {
+    "seeds": "Seeds",
+    "tea": "Tea",
+    "vegetables": "Vegetables",
+    "fruits": "Fruits",
+    "grains": "Grains"
+  },
+
+  "units": {
+    "kg": "Kilogram",
+    "quintal": "Quintal",
+    "ton": "Ton",
+    "piece": "Piece"
+  },
+
+  "sell": {
+    "title": "Sell Your Agricultural Products",
+    "subtitle": "List your produce and connect directly with buyers",
+
+    "cropDetails": "Crop Details",
+    "cropName": "Crop Name",
+    "cropNamePlaceholder": "e.g. Assam Tea Leaves",
+    "category": "Category",
+    "variety": "Variety",
+    "varietyPlaceholder": "Optional",
+    "description": "Description",
+    "descriptionPlaceholder": "Add quality, grade, or special notes",
+
+    "pricing": "Quantity & Pricing",
+    "quantity": "Available Quantity",
+    "unit": "Unit",
+    "price": "Price per unit (₹)",
+    "minOrder": "Minimum Order",
+
+    "location": "Location & Harvest",
+    "state": "State",
+    "city": "City",
+    "harvestDate": "Harvest Date",
+    "organic": "Organic Product",
+
+    "contactInfo": "Contact Preference",
+    "mobile": "Mobile Number (Optional)",
+    "mobilePlaceholder": "10-digit mobile number",
+    "mobileHint": "Chat is mandatory. Phone calls are optional.",
+
+    "submit": "List for Sale",
+    "submitting": "Submitting...",
+
+    "whyTitle": "Why Sell With SahayaKISSAN?",
+    "why1": "Direct access to verified buyers",
+    "why2": "Fair pricing with no middlemen",
+    "why3": "Fast and transparent transactions",
+    "why4": "Sell directly from your location",
+    "why5": "Trusted by farmers across India",
+
+    "popularCategories": "Popular Categories",
+    "images": "Product Images",
+    "imageHint": "Add clear photos of your product. You can upload up to 6 images.",
+    "addImages": "Add Images",
+    "removeImage": "Remove image",
+    "imageLimit": "{{count}} image(s) remaining",
+    "selectImages": "Select Product Images",
+    "clickToUpload": "Click to upload images",
+    "remainingImages": "{{count}} image(s) remaining",
+    "supportedFormats": "Supported formats: JPG, PNG, JPEG, WEBP (Max 5MB each)"
+
+  },
+
+  "stats": {
+    "farmers": "Farmers",
+    "products": "Products Sold",
+    "value": "Total Value"
+  },
+
+  "popup": {
+    "successTitle": "Listing Created Successfully",
+    "successMessage": "Your product is now visible to buyers.",
+    "errorTitle": "Something Went Wrong",
+    "errorMessage": "Please fill required fields and try again."
+  },
+  "myListing": {
+    "title": "Current Sells",
+    "subtitle": "Manage your crop listings",
+    "tabs": {
+      "active": "Active",
+      "paused": "Paused",
+      "sold": "Sold"
+    },
+    "empty": "No listings found",
+    "loading": "Loading...",
+    "priceUnit": "₹ {{price}} / {{unit}}",
+    "details": "{{quantity}} {{unit}} · {{city}}, {{state}}",
+    "actions": {
+      "edit": "Edit",
+      "pause": "Pause",
+      "resume": "Resume",
+      "delete": "Delete",
+      "confirmDelete": "Delete this listing?"
+    },
+    "status": {
+      "active": "Active",
+      "paused": "Paused",
+      "sold": "Sold"
+    }
+  },
+   "edit": {
+    "title": "Edit Listing",
+    "subtitle": "Update your product details",
+    "save": "Save Changes",
+    "updated": "Listing Updated Successfully",
+    "existingImages": "Current Images",
+    "addMoreImages": "Add New Images (Optional)",
+    "imageLimit": "{{count}} slots remaining"
+  }
+
+}

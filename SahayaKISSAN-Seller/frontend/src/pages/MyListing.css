@@ -1,0 +1,297 @@
+.my-listings-page.pt-20 {
+  background: linear-gradient(135deg, #f8fafc 0%, #e8f5e8 30%, #f1f7f4 70%);
+  min-height: 100vh;
+  padding: 140px 1rem 3rem; 
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.8rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(25px);
+  border-radius: 24px;
+  border: 1px solid rgba(165, 230, 177, 0.3);
+  box-shadow: 0 25px 70px rgba(47, 122, 62, 0.15);
+}
+
+.container h2 {
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, #225d2a 0%, #2f7a3e 50%, #4caf50 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.8rem;
+  text-align: center;
+  position: relative;
+  letter-spacing: -0.01em;
+}
+
+.container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 3px;
+  background: linear-gradient(90deg, #a5e6b1, #4caf50);
+  border-radius: 2px;
+}
+
+.subtitle {
+  color: #64748b;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 2.2rem;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 2.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 5px 6px;
+  justify-content: center;
+  box-shadow: 0 12px 35px rgba(47, 122, 62, 0.15);
+  border: 1px solid rgba(165, 230, 177, 0.4);
+}
+
+.tab {
+  padding: 0.85rem 1.6rem;
+  color: #94a3b8;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 16px;
+  background: transparent;
+  border: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: #2f7a3e;
+  transform: translateY(-2px);
+  background: rgba(165, 230, 177, 0.2);
+}
+
+.tab.active {
+  color: white;
+  background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
+  box-shadow: 0 10px 25px rgba(76, 175, 80, 0.35);
+  transform: translateY(-2px);
+}
+
+.listing-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+  margin-bottom: 1.6rem;
+  border-radius: 20px;
+  border: 1px solid rgba(165, 230, 177, 0.4);
+  box-shadow: 0 15px 45px rgba(47, 122, 62, 0.14);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+}
+
+.listing-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #a5e6b1, #4caf50, transparent);
+}
+
+.listing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 80px rgba(47, 122, 62, 0.22);
+}
+
+.listing-card img {
+  width: 85px;
+  height: 85px;
+  border-radius: 14px;
+  object-fit: cover;
+  margin-right: 1.2rem;
+  box-shadow: 0 10px 30px rgba(47, 122, 62, 0.25);
+  transition: all 0.4s ease;
+}
+
+.listing-card:hover img {
+  transform: scale(1.05);
+}
+
+.listing-info {
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.listing-info h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.3rem;
+  color: #225d2a;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.price {
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #2f7a3e;
+  margin-bottom: 0.3rem;
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.details {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+  font-weight: 500;
+}
+
+.status {
+  min-width: 65px;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-right: 0.8rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.status.active {
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  color: white;
+}
+
+.status.paused {
+  background: linear-gradient(135deg, #ff9800, #ffb74d);
+  color: white;
+}
+
+.status.sold {
+  background: linear-gradient(135deg, #9e9e9e, #757575);
+  color: white;
+}
+
+.listing-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  min-width: 260px;
+}
+
+button {
+  height: 34px;
+  min-width: 65px;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.6s;
+}
+
+button:hover::before {
+  left: 100%;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.pause { background: linear-gradient(135deg, #ff9800, #ffb74d); color: white; }
+.resume { background: linear-gradient(135deg, #4caf50, #66bb6a); color: white; }
+.delete { background: linear-gradient(135deg, #f44336, #ef5350); color: white; }
+
+.empty {
+  margin-top: 3.5rem;
+  text-align: center;
+  color: #64748b;
+  font-size: 1rem;
+  padding: 2.5rem 1.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 2px dashed rgba(165, 230, 177, 0.4);
+}
+
+@media (max-width: 1024px) {
+  .listing-actions { min-width: auto; }
+  button { min-width: 60px; font-size: 0.75rem; }
+}
+
+@media (max-width: 768px) {
+  .container { padding: 1.5rem 1rem; margin: 0 0.5rem; border-radius: 16px; }
+  .my-listings-page.pt-20 { padding-top: 130px; } 
+  .listing-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+    padding: 1.5rem;
+  }
+  .listing-card img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 75px;
+    height: 75px;
+  }
+  .listing-info { padding-right: 0; order: -1; }
+  .listing-actions {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    order: 3;
+  }
+  button {
+    flex: 1;
+    max-width: 85px;
+    height: 32px;
+    font-size: 0.75rem;
+  }
+  .status { margin-right: 0; margin-bottom: 0.8rem; order: 2; }
+}
+
+@media (max-width: 480px) {
+  .my-listings-page.pt-20 { padding: 120px 0.5rem 2rem; }
+  .tabs { flex-wrap: wrap; padding: 6px 4px; border-radius: 16px; }
+  .tab { padding: 0.7rem 1.2rem; font-size: 0.85rem; flex: 1 1 45%; }
+  .listing-card img { width: 70px; height: 70px; }
+}

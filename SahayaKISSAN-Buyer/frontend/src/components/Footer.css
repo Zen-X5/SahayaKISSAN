@@ -1,0 +1,240 @@
+/* ===== AGRICULTURE FOOTER - 50 YEARS EXPERIENCE ===== */
+.agri-footer {
+  background: linear-gradient(180deg, #1e3a1f 0%, #2f7a3e 50%, #225d2a 100%);
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.agri-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #a5e6b1, #4caf50, #a5e6b1, transparent);
+  animation: footerShimmer 6s infinite;
+}
+
+@keyframes footerShimmer {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.footer-main {
+  padding: 5rem 2rem 3rem;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 4rem;
+}
+
+.footer-brand {
+  position: relative;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo-icon {
+  font-size: 3rem;
+  animation: leafFloat 4s ease-in-out infinite;
+}
+
+@keyframes leafFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(10deg); }
+}
+
+.logo-text {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #a5e6b1, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brand-desc {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+  max-width: 300px;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-link:hover {
+  transform: translateY(-8px) scale(1.1);
+  background: rgba(165, 230, 177, 0.3);
+  box-shadow: 0 20px 40px rgba(165, 230, 177, 0.4);
+}
+
+.footer-section h3,
+.footer-contact h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.footer-section h3::after,
+.footer-contact h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #a5e6b1, #4caf50);
+  border-radius: 2px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 1rem;
+}
+
+.footer-section a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-section a:hover {
+  color: #a5e6b1;
+  padding-left: 1rem;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  background: rgba(165, 230, 177, 0.2);
+  transform: translateX(8px);
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  color: #a5e6b1;
+}
+
+.footer-bottom {
+  background: rgba(30, 58, 31, 0.8);
+  backdrop-filter: blur(20px);
+  padding: 1.5rem 2rem;
+  border-top: 1px solid rgba(165, 230, 177, 0.3);
+}
+
+.footer-bottom .footer-container {
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+}
+
+.bottom-lang-select {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(165, 230, 177, 0.5);
+  border-radius: 25px;
+  padding: 0.6rem 1.2rem;
+  color: #2f7a3e;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-main {
+    padding: 3rem 1rem;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  
+  .footer-contact {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .contact-item {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-bottom .footer-container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-icon {
+    font-size: 2.5rem;
+  }
+  
+  .logo-text {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "business": "Business",
+  "seeds": "Seeds",
+  "tea": "Tea",
+  "sensorsAndIoT": "Sensors & IoT",
+  "schemes": "Schemes",
+  "research": "SahayaKISSAN Research",
+  "afterHero": {
+    "whoWeAre": {
+      "title": "Who We Are",
+      "p1": "SahayaKISSAN is a technology-driven agricultural platform built with one purpose — to empower Indian farmers through clarity, access, and innovation.",
+      "p2": "We connect agriculture, research, technology, and policy into one unified digital ecosystem that supports farmers at every step.",
+      "imageAlt": "Farmers working together in agricultural fields"
+    },
+    "whyMatters": {
+      "title": "Why SahayaKISSAN Matters",
+      "p1": "Farmers today face growing uncertainty — climate change, unpredictable markets, and lack of timely information.",
+      "p2": "SahayaKISSAN simplifies decision-making by bringing data, government schemes, and modern agri-tech into one accessible platform.",
+      "imageAlt": "Challenges and resilience in agriculture"
+    },
+    "enable": {
+      "title": "What We Enable",
+      "cards": {
+        "smart": {
+          "title": "Smart Decisions",
+          "desc": "Weather, soil data, and insights that help farmers act with confidence."
+        },
+        "schemes": {
+          "title": "Access to Schemes",
+          "desc": "Simple and clear access to government initiatives without confusion."
+        },
+        "tech": {
+          "title": "Agri-Tech Adoption",
+          "desc": "Sensors, IoT, and research-backed innovation for modern farming."
+        },
+        "sustain": {
+          "title": "Sustainable Growth",
+          "desc": "Technology aligned with long-term farmer welfare and food security."
+        }
+      }
+    }
+  },
+  "impact": {
+    "title": "Our Impact",
+    "subtitle": "Real results for real farmers across India",
+    "farmers": "Farmers Empowered",
+    "districts": "Districts Covered",
+    "dataPoints": "Data Points Collected",
+    "iot": "IoT Devices Active"
+  },
+  "how": {
+    "title": "How It Works",
+    "subtitle": "Simple 4-step process for maximum impact",
+    "step1": {
+      "title": "Connect Sensors",
+      "desc": "Install IoT sensors on your farm for real-time soil, weather, and crop data."
+    },
+    "step2": {
+      "title": "Get Insights",
+      "desc": "Receive AI-powered recommendations tailored to your specific farm conditions."
+    },
+    "step3": {
+      "title": "Access Schemes",
+      "desc": "Discover and apply for government schemes with one-click eligibility checks."
+    },
+    "step4": {
+      "title": "Scale Smart",
+      "desc": "Purchase premium seeds, tools, and tech with data-backed confidence."
+    }
+  },
+  "products": {
+    "title": "Live Products",
+    "subtitle": "Fresh seeds & agri-tech available now",
+    "placeholder1": "Premium Mustard Seeds",
+    "price1": "299",
+    "placeholder2": "Organic Tea Saplings",
+    "price2": "199",
+    "placeholder3": "Soil pH Sensor Kit",
+    "price3": "1,499",
+    "placeholder4": "Smart Irrigation Kit",
+    "price4": "2,999"
+  },
+  "tech": {
+    "title": "Technology Stack",
+    "subtitle": "Enterprise-grade infrastructure powering your farm"
+  },
+  "sdg": {
+    "title": "UN SDG Alignment",
+    "desc": "Contributing to global sustainable development goals through agricultural innovation"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Farm?",
+    "desc": "Join 500+ farmers already using SahayaKISSAN's IoT for better yields and smarter decisions.",
+    "button1": "Start Free Trial",
+    "button2": "Contact Sales"
+  },
+  "footer": {
+    "brandDesc": "Empowering Indian farmers with technology, data, and innovation for sustainable agriculture.",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "cropMonitoring": "Crop Monitoring",
+    "weatherForecast": "Weather Forecast", 
+    "govSchemes": "Government Schemes",
+    "marketPrices": "Market Prices",
+    "contact": "Contact Info",
+    "address": "Jorhat, Assam, India",
+    "copyright": "SahayaKISSAN. All rights reserved."
+  }
+}
