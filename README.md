@@ -2,6 +2,8 @@
 
 **SahayaKISSAN** is an integrated AI-powered agriculture platform that empowers farmers with cutting-edge technology for crop management, disease detection, market access, and real-time multilingual assistance. The platform eliminates middlemen, increases farmer income by 35%+, and combines 5 applications into a unified ecosystem.
 
+
+
 ---
 
 ![Demo Image](images/website.png)
